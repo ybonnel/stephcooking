@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steph Cooking - Cuisine chez vous. Service de batch cooking à domicile. Des repas faits maison, préparés chez vous.">
+  <title>Steph Cooking - Cuisine Chez Vous</title>
+  <link rel="icon" type="image/png" href="logo_steph_cooking.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo">
+        <img src="logo_steph_cooking.png" alt="Steph Cooking">
+      </a>
+      <button class="navbar-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="#carte">La Carte</a></li>
+        <li><a href="#deroulement">Déroulé</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo_steph_cooking.png" alt="Steph Cooking - Cuisine Chez Vous" class="hero-logo">
+      <h1>Steph Cooking</h1>
+      <p>Cuisine chez vous — Des repas faits maison, préparés directement dans votre cuisine. Savourez la semaine sans effort !</p>
+      <a href="#carte" class="btn">Découvrir la carte</a>
+    </div>
+  </section>
+
+  <!-- LA CARTE -->
+  <section class="carte" id="carte">
+    <div class="section-inner">
+      <h2 class="section-title">La Carte de la Quinzaine</h2>
+      <p class="section-subtitle">Renouvelée toutes les deux semaines avec des produits frais et de saison</p>
+      <div id="menu-content">
+        <p class="menu-loading">Chargement de la carte...</p>
+        <noscript>
+          <p>Contactez-nous pour recevoir la carte : <a href="mailto:contact@stephcooking.fr">contact@stephcooking.fr</a></p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- LE DEROULEMENT -->
+  <section id="deroulement">
+    <div class="section-inner">
+      <h2 class="section-title">Comment ça se passe ?</h2>
+      <p class="section-subtitle">Un service simple et clé en main, de la commande à la dégustation</p>
+      <div class="deroulement-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Échange & Choix</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+          <h3>Courses & Préparation</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Cuisine chez vous</h3>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>Rangement & Conseils</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section class="tarifs" id="tarifs">
+    <div class="section-inner">
+      <h2 class="section-title">Tarifs</h2>
+      <p class="section-subtitle">Des formules adaptées à vos besoins</p>
+      <div class="tarifs-grid">
+        <div class="tarif-card">
+          <h3>Formule Duo</h3>
+          <div class="tarif-price">XX€ <span>/ prestation</span></div>
+          <ul class="tarif-details">
+            <li>Pour 2 personnes</li>
+            <li>X repas pour la semaine</li>
+            <li>Courses incluses</li>
+            <li>Cuisine à domicile</li>
+            <li>Rangement de la cuisine</li>
+          </ul>
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+        <div class="tarif-card popular">
+          <div class="tarif-badge">Populaire</div>
+          <h3>Formule Famille</h3>
+          <div class="tarif-price">XX€ <span>/ prestation</span></div>
+          <ul class="tarif-details">
+            <li>Pour 4 personnes</li>
+            <li>X repas pour la semaine</li>
+            <li>Courses incluses</li>
+            <li>Cuisine à domicile</li>
+            <li>Rangement de la cuisine</li>
+            <li>Conseils de réchauffage</li>
+          </ul>
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+        <div class="tarif-card">
+          <h3>Formule Sur-Mesure</h3>
+          <div class="tarif-price">Sur devis</div>
+          <ul class="tarif-details">
+            <li>Nombre de personnes au choix</li>
+            <li>Menu personnalisé</li>
+            <li>Régimes spécifiques</li>
+            <li>Événements spéciaux</li>
+            <li>Devis gratuit</li>
+          </ul>
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section id="photos">
+    <div class="section-inner">
+      <h2 class="section-title">Galerie Photos</h2>
+      <p class="section-subtitle">Quelques réalisations en images</p>
+      <div class="photos-grid">
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+        <div class="photo-placeholder"><i class="fa-solid fa-camera"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">N'hésitez pas à me contacter pour toute question ou réservation</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@stephcooking.fr">contact@stephcooking.fr</a>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" aria-label="Instagram" title="Instagram (bientôt disponible)">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook" title="Facebook (bientôt disponible)">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Steph Cooking - Cuisine Chez Vous. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
