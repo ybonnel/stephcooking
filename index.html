@@ -14,6 +14,27 @@
 </head>
 <body>
 
+  <!-- COMING SOON overlay for production domain -->
+  <div id="coming-soon" style="display:none; position:fixed; inset:0; z-index:9999; background:#fff8f0; flex-direction:column; align-items:center; justify-content:center; text-align:center; font-family:'Nunito',sans-serif; padding:2rem;">
+    <img src="logo_steph_cooking.png" alt="Steph Cooking" style="width:200px; max-width:80vw; margin-bottom:2rem;">
+    <h1 style="color:#e07b4c; font-size:2rem; margin-bottom:1rem;">Steph Cooking</h1>
+    <p style="color:#555; font-size:1.2rem; max-width:500px; line-height:1.6;">Notre site arrive bient&ocirc;t !<br>En attendant, n'h&eacute;sitez pas &agrave; nous contacter&nbsp;:</p>
+    <a href="mailto:contact@stephcooking.fr" style="color:#e07b4c; font-size:1.1rem; margin-top:1rem; text-decoration:none;">contact@stephcooking.fr</a>
+  </div>
+  <script>
+    if (window.location.hostname === 'stephcooking.fr' || window.location.hostname === 'www.stephcooking.fr') {
+      document.getElementById('coming-soon').style.display = 'flex';
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide all other content
+        Array.from(document.body.children).forEach(function(el) {
+          if (el.id !== 'coming-soon' && el.tagName !== 'SCRIPT') {
+            el.style.display = 'none';
+          }
+        });
+      });
+    }
+  </script>
+
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="navbar-inner">
