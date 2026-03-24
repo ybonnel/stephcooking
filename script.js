@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .catch(function () {
         menuContainer.innerHTML =
-          '<p style="text-align:center; color:#666;">Contactez-nous pour recevoir la carte de la quinzaine : <a href="mailto:contact@stephcooking.fr">contact@stephcooking.fr</a></p>';
+          '<p style="text-align:center; color:#666;">Contactez-nous pour recevoir la carte : <a href="mailto:contact@stephcooking.fr">contact@stephcooking.fr</a></p>';
       });
   }
 
