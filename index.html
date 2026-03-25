@@ -69,7 +69,8 @@
     <a href="mailto:contact@stephcooking.fr" style="color:#e07b4c; font-size:1.1rem; margin-top:1rem; text-decoration:none;">contact@stephcooking.fr</a>
   </div>
   <script>
-    if (window.location.hostname === 'stephcooking.fr' || window.location.hostname === 'www.stephcooking.fr') {
+    var params = new URLSearchParams(window.location.search);
+    if ((window.location.hostname === 'stephcooking.fr' || window.location.hostname === 'www.stephcooking.fr') && !params.has('nobanner')) {
       document.getElementById('coming-soon').style.display = 'flex';
       document.addEventListener('DOMContentLoaded', function() {
         // Hide all other content
